@@ -69,10 +69,7 @@ def uci_to_algebric(stockfish: Stockfish, uci):
 
 def print_analyse(stockfish: Stockfish, index, move, board: chess.Board, white=True):
     best_move = stockfish.get_best_move()
-    print(str(best_move))
-    print(chess.Move.from_uci(str(best_move)))
-    print(board.san(chess.Move.from_uci(str(best_move))))
-    best_move_algebric = board.san(chess.Move.from_uci(str(best_move)))
+    best_move_algebric = uci_to_algebric(stockfish, best_move)
     uci_moveW = board.parse_san(move)
     board.push(uci_moveW)
     stockfish.make_moves_from_current_position([best_move])
