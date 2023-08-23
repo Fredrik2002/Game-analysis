@@ -51,32 +51,14 @@ def eval_difference(eval_before, eval_after, white=True):
             return 0
 
 
-def uci_to_algebric(stockfish: Stockfish, uci):
-
-    value = stockfish.get_what_is_on_square(uci[:2]).value
-
-    if stockfish.get_what_is_on_square(uci[2:]) is None:
-        if value != "P" and value != "p":
-            return value.upper() + uci[2:]
-        else:
-            return uci[2:]
-    else:
-        if value == "P" or value=="p":
-            return uci[0] + "x" + uci[2:]
-        else:
-            return value.upper() + "x" + uci[2:]
-
 
 def print_analyse(stockfish: Stockfish, index, move, board: chess.Board, white=True):
     best_move = stockfish.get_best_move()
-    print(str(best_move))
-    print(chess.Move.from_uci(str(best_move)))
-    print(board.san(chess.Move.from_uci(str(best_move))))
-    best_move_algebric = board.san(chess.Move.from_uci(str(best_move)))
-    uci_moveW = board.parse_san(move)
-    board.push(uci_moveW)
+    best_move_algebric = str(board.san(chess.Move.from_uci(str(best_move))))
+    uci_movePlayer = board.parse_san(move)
+    board.push(uci_movePlayer)
     stockfish.make_moves_from_current_position([best_move])
-    if best_move == str(uci_moveW):
+    if best_move == str(uci_movePlayer):
         print(f"\033[96m{index + 1}. {move}, Delta=0.00, Eval={get_eval(stockfish)} \033[0m")
     else:
         best_eval = stockfish.get_evaluation()
