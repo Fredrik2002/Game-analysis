@@ -1,9 +1,8 @@
-
+from colorama import init
 from utils import *
 
+init()
 partie = get_game("game.txt")
-
-couleur = 0
 DEPTH = 18 # you can reduce if the program takes too much time/CPU
 board = chess.Board()
 stockfish = Stockfish(path="stockfish/stockfish-windows-x86-64-avx2.exe", depth=DEPTH)

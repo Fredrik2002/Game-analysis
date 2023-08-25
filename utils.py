@@ -1,6 +1,5 @@
 import chess
 from stockfish import Stockfish
-from colors import bcolors
 
 
 def get_game(path):
@@ -83,8 +82,3 @@ def get_color_code(delta):
         return '\033[91m'
     return '\033[101m'
 
-
-def print_palette():
-    for color in dir(bcolors):
-        if color[0]!="_":
-            print(getattr(bcolors, color)+color+"\033[0m")
