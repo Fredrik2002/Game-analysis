@@ -1,19 +1,14 @@
-from utils import *
+import chess
+import inspect
 
-stockfish = Stockfish(
-    path="stockfish/stockfish-windows-x86-64-avx2.exe", depth=20)
+board = chess.Board()
+move = chess.Move.from_uci("e2e4")
+print(board.san(move))
 
-started, variable = False, True
-partie = ""
-with open("game.txt", "r") as file:
-    for line in file:
-        if line[0] == "1":
-            print("started")
-            started = True
-        if started:
-            if line[-1] == "\n":
-                partie+= line[:-1] + " "
-            else :
-                partie +=line
-
-print(partie)
+callerframerecord = inspect.stack()[1]    # 0 represents this line
+                                            # 1 represents line at caller
+frame = callerframerecord[0]
+info = inspect.getframeinfo(frame)
+print(info.filename)                      # __FILE__     -> Test.py
+print(info.function)                      # __FUNCTION__ -> Main
+print(info.lineno)

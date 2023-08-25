@@ -9,7 +9,6 @@ def get_game(path):
     with open(path, "r") as file:
         for line in file:
             if line[0] == "1":
-                print("started")
                 started = True
             if started:
                 if line[-1] == "\n":
