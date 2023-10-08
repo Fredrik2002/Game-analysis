@@ -1,11 +1,20 @@
-[Event "?"]
-[Site "?"]
-[Date "????.??.??"]
+[Event "Live Chess - chess"]
+[Site "Chess.com"]
+[Date "2023.09.05"]
 [Round "?"]
-[White "?"]
-[Black "?"]
-[Result "*"]
+[White "MusliVeseli005"]
+[Black "fredrik04122002"]
+[Result "0-1"]
+[TimeControl "300+5"]
+[WhiteElo "1675"]
+[BlackElo "1596"]
+[Termination "fredrik04122002 won by resignation"]
 
-1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. Bg5 Bd7 6. e3 b6 7. Qb3 Nc6 8. Bd3
-O-O 9. O-O Rb8 10. a4 h6 11. Bh4 Rc8 12. a5 bxa5 13. Ra4 Rb8 14. Rfa1 g6 15.
-R4a3 Ra8 16. R1a2 Rb8 17. Ra1 Kh7 18. Qc2 *
+1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nc3 Nf6 5. Nf3 Bg4 6. h3 Bh5 7. Bd3 Nc6 8. Be3
+e6 9. O-O Bd6 10. a3 O-O 11. b4 Rc8 12. Na4 b6 13. c3 Re8 14. Be2 Qd7 15. Nb2
+Ne7 16. a4 Rxc3 17. Rc1 Rec8 18. Rxc3 Rxc3 19. Qd2 Bxb4 20. Nd3 Qd6 21. Bf4 Rxd3
+22. Bxd6 Rxd2 23. Bxb4 Rxe2 24. Bxe7 Bxf3 25. gxf3 Rd2 26. Rc1 h6 27. Rc7 Rxd4
+28. Rxa7 Rd1+ 29. Kg2 Rb1 30. Bd8 b5 31. a5 b4 32. Rb7 b3 33. a6 Ra1 34. a7 Kh7
+35. Rxf7 b2 36. Bxf6 Rg1+ 37. Kxg1 b1=Q+ 38. Kg2 Qg6+ 39. Kh2 Qxf7 40. a8=Q Qxf6
+41. Kg2 Qg5+ 42. Kh2 Qf4+ 43. Kg2 d4 44. Qe4+ Qxe4 45. fxe4 e5 46. f3 Kg6 47.
+Kg3 Kf6 48. f4 exf4+ 49. Kxf4 g5+ 50. Kf3 Ke5 0-1

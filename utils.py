@@ -1,5 +1,17 @@
-import chess
-from stockfish import Stockfish
+import subprocess
+import sys
+
+try:
+    import chess
+    from stockfish import Stockfish
+    from colorama import init
+except ModuleNotFoundError: #if a module is not installed
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "chess"]) #Install the module chess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "stockfish"]) # Install the module stockfish
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "colorama"]) # Install the module stockfish
+    import chess
+    from stockfish import Stockfish
+    from colorama import init
 
 
 def get_game(path):

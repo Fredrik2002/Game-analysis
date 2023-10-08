@@ -1,5 +1,5 @@
-from colorama import init
 from utils import *
+
 
 init()
 partie = get_game("game.txt")
