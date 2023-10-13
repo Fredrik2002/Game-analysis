@@ -13,7 +13,12 @@ This project takes a full chess game as input and evaluate each move compared to
 1. Go to *main.py*, line 8, and enter the path of your Stockfish engine in `path=''`
 (Warning : The path needs to be passed with forward slash (/) and not blackslash (\\), e.g.
 C:/Users/XXXX/Desktop/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-x86-64-avx2)
-2. Paste the PGN of your game in the game.txt file
+2. Paste the PGN of your game in the game.txt file (or the game itself starting by 1.e4 e5 2.Cf3 ...)
 3. Run main.py
 4. Type 0 or 1 in the console if you want to analyse white or black side <br><br>
+
+## Improvements / Contributions / Work in Progress :
+- Calculate a % accuracy at the end of the game
+- Optimizations in *utils.py*
+- Any other idea are welcome !
 
