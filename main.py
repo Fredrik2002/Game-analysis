@@ -5,7 +5,7 @@ init()
 partie = get_game("game.txt")
 DEPTH = 18 # you can reduce if the program takes too much time/CPU
 board = chess.Board()
-stockfish = Stockfish(path="stockfish/stockfish-windows-x86-64-avx2.exe", depth=DEPTH)
+stockfish = Stockfish(path="C:/Users/XXXXX/Downloads/stockfish_15_win_x64_avx2/stockfish_15_x64_avx2", depth=DEPTH)
 partie = partie.split('.')[1:]
 
 

@@ -1,15 +1,19 @@
-### Replication of the premium analysis on chess.com w/ Stockfish 16
+# Game analysis w/ Stockfish
 
-This project allows you to see which moves you make are good or not, without bothering about what the opponent does
+This project takes a full chess game as input and evaluate each move compared to the best one given by Stockfish
 
-WARNING : This program will automatically install 3 packages via the 'pip install' command :
+![image](https://github.com/Fredrik2002/Chess-analysis/assets/86866135/153b03da-b3ac-4789-9888-f7a9bccc63c5)
+
+##### WARNING : This program will automatically install 3 packages via the 'pip install' command if you don't have them already :
 - chess
 - stockfish
 - colorama
 
-<ins>How to use :</ins>
-1. Paste the PGN of your game in the game.txt file
-2. Run main.py
-The program will compare each one of your moves to the best one given by Stockfish
+## Usage
+1. Go to *main.py*, line 8, and enter the path of your Stockfish engine in `path=''`
+(Warning : The path needs to be passed with forward slash (/) and not blackslash (\\), e.g.
+C:/Users/XXXX/Desktop/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-x86-64-avx2)
+2. Paste the PGN of your game in the game.txt file
+3. Run main.py
+4. Type 0 or 1 in the console if you want to analyse white or black side <br><br>
 
-![image](https://github.com/Fredrik2002/Chess-analysis/assets/86866135/153b03da-b3ac-4789-9888-f7a9bccc63c5)
