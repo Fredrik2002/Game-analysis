@@ -21,4 +21,5 @@ C:/Users/XXXX/Desktop/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-
 - Calculate a % accuracy at the end of the game
 - Optimizations in *utils.py*
 - Any other idea are welcome !
+- Calculate variance
 
