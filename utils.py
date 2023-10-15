@@ -15,7 +15,7 @@ except ModuleNotFoundError: #if a module is not installed
 
 
 def get_game(path):
-    started, variable = False, True
+    started = False
     partie = ""
     with open(path, "r") as file:
         for line in file:
@@ -62,7 +62,7 @@ def eval_difference(eval_before, eval_after, white=True):
 
 
 
-def print_analyse(stockfish: Stockfish, index, move, board: chess.Board, white=True):
+def print_analyse(stockfish: Stockfish, index, move, board: chess.Board, v, white=True):
     best_move = stockfish.get_best_move()
     best_move_algebric = str(board.san(chess.Move.from_uci(str(best_move))))
     uci_movePlayer = board.parse_san(move)
@@ -77,6 +77,7 @@ def print_analyse(stockfish: Stockfish, index, move, board: chess.Board, white=T
         delta = eval_difference(best_eval, eval_now, white) / 100
         if delta < 0:
             delta = "0.00"
+        v[0]+=float(delta)**2
         print(f"{get_color_code(float(delta))}{index + 1}. {move}, Delta={delta}, "
               f"Eval={get_eval(stockfish)} Best was {index+1}. {best_move_algebric} \033[0m")
 

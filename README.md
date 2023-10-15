@@ -19,7 +19,7 @@ C:/Users/XXXX/Desktop/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-
 
 ## Improvements / Contributions / Work in Progress :
 - Calculate a % accuracy at the end of the game
-- Optimizations in *utils.py*
+- Fix inaccuracies from Stockfish in ultra dominant position
 - Any other idea are welcome !
 - Calculate variance
 
