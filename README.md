@@ -21,5 +21,4 @@ C:/Users/XXXX/Desktop/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-
 - Calculate a % accuracy at the end of the game
 - Fix inaccuracies from Stockfish in ultra dominant position
 - Any other idea are welcome !
-- Calculate variance
 

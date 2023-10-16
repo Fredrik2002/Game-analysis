@@ -19,4 +19,4 @@ Bc5 22. Qe8+ Kc7 23. Rd1 Rxe8 24. Bxe8 Kc8 25. Na3 Bxe3+ 26. Kf1 g3 27. hxg3 Rh8
 28. Bd7+ Nxd7 29. Rd3 Ne5 30. Rd5 Rh2 31. Rad1 Nf7 32. Rd7 Ne5 33. Rd8+ Kc7 34.
 Nb5+ Kb6 35. R8d6+ Ka5 36. Nxa7 Bb6 37. R1d5+ Ka4 38. a3 Bxa7 39. Rxe5 Be3 40.
 Rd3 fxg3 41. Rdxe3 Rxc2 42. R5e4+ Kb5 43. Rb4+ Kc5 44. Re5+ Kd6 45. Rxg5 Ke6 46.
-Rb6+ Kd7 47. Rg7+ Kc8 48. Rf6 Rh2 49. Rf8# 1-0
+Rb6+ Kd7 47. Rg7+ Kc8 48. Rf6 Rh2
